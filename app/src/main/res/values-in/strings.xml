@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">AnimaList</string>
+    <string name="about_msg">AnimaList v1.0\n\nAplikasi katalog anime lengkap untuk mencari dan menyimpan daftar favoritmu.\n\nCopyright:\n©️2026 Rifqi Maulana\n©️2026 MyAnimeList Co., Ltd., All Right Reserved</string>
+    <string name="arrow_symbol">&gt;</string>
+
+    <string name="loading_location">Mencari lokasi.. Mohon tunggu</string>
+    <string name="btn_next_home">Lanjut ke Home</string>
+
+    <string name="hi_user">Halo %1$s,</string>
+    <string name="greeting_morning">Selamat Pagi!</string>
+    <string name="greeting_afternoon">Selamat Siang!</string>
+    <string name="greeting_evening">Selamat Sore!</string>
+    <string name="greeting_night">Selamat Malam!</string>
+    <string name="category_top_rated">Peringkat Atas</string>
+    <string name="category_new_release">Baru Rilis</string>
+    <string name="recommendation_title">Berdasarkan favoritmu</string>
+
+    <string name="search_hint">Cari judul anime...</string>
+    <string name="filter_genre">Genre</string>
+    <string name="filter_status">Status</string>
+    <string name="apply_filter">Terapkan Filter</string>
+
+    <string name="library_title">Koleksi Anda</string>
+    <string name="library_title_text">Koleksi Anda</string>
+    <string name="filter_all">Semua</string>
+    <string name="empty_library_msg">Belum ada anime di daftar ini.</string>
+    <string name="empty_watchlist">Belum ada anime di daftar ini.</string>
+    <string name="category_watching">Sedang Tonton</string>
+    <string name="category_plan">Rencana Tonton</string>
+    <string name="category_done">Selesai</string>
+
+    <string name="detail_score">Skor</string>
+    <string name="detail_status_label">Status</string>
+    <string name="select_category">Pilih Kategori</string>
+    <string name="status_watching">Sedang Ditonton</string>
+    <string name="status_plan">Rencana</string>
+    <string name="status_plan_to_watch">Rencana Ditonton</string>
+    <string name="status_completed">Selesai</string>
+    <string name="remove_from_list">Hapus dari Daftar</string>
+
+    <string name="profile_title">Profil</string>
+    <string name="default_username">Nama Pengguna</string>
+    <string name="edit_profile">Ubah</string>
+    <string name="settings_header">Pengaturan</string>
+    <string name="language_setting">Bahasa</string>
+    <string name="default_language_val">Indonesia &gt;</string>
+    <string name="theme_setting">Tema</string>
+    <string name="default_theme_val">Terang &gt;</string>
+    <string name="others_header">Lainnya</string>
+    <string name="help_support">Bantuan &amp; Dukungan</string>
+    <string name="about_app">Tentang Aplikasi</string>
+
+    <string name="admin_panel">Panel Admin</string>
+    <string name="admin_title">Tambah Anime Baru</string>
+    <string name="hint_title">Judul Anime</string>
+    <string name="hint_thumbnail">URL Gambar Poster</string>
+    <string name="hint_rating">Rating (Cth: 8.5)</string>
+    <string name="hint_genres">Genre (Pisahkan dgn koma: Action, Drama)</string>
+    <string name="hint_synopsis">Sinopsis</string>
+    <string name="hint_episodes">Jumlah Episode (Cth: 24 ep)</string>
+    <string name="hint_year">Tahun Rilis (Cth: 2024)</string>
+    <string name="hint_status">Status (Airing / Finished Airing)</string>
+    <string name="btn_save_anime">Simpan ke Database</string>
+
+    <string name="admin_edit_title">Ubah Anime</string>
+    <string name="btn_update_anime">Perbarui Database</string>
+    <string name="btn_delete_anime">Hapus Anime</string>
+
+    <string name="filter_sort">Urutkan</string>
+    <string name="sort_populer">Populer</string>
+    <string name="sort_rating_up">Rating ▲</string>
+    <string name="sort_rating_down">Rating ▼</string>
+    <string name="sort_newest">Terbaru</string>
+    <string name="sort_oldest">Terlama</string>
+    <string name="sort_az">A-Z</string>
+    <string name="sort_za">Z-A</string>
+
+    <string name="nav_home">Beranda</string>
+    <string name="nav_search">Cari</string>
+    <string name="nav_library">Koleksi</string>
+</resources>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">AnimaList</string>
+    <string name="about_msg">AnimaList v1.0\n\nA comprehensive anime catalog application to discover and save your favorites.\n\nCopyright:\n©️2026 Rifqi Maulana\n©️2026 MyAnimeList Co., Ltd., All Right Reserved</string>
+    <string name="arrow_symbol">&gt;</string>
+
+    <string name="loading_location">Getting location.. Please wait</string>
+    <string name="btn_next_home">Continue to Home</string>
+
+    <string name="hi_user">Hi %1$s,</string>
+    <string name="greeting_morning">Good Morning!</string>
+    <string name="greeting_afternoon">Good Afternoon!</string>
+    <string name="greeting_evening">Good Evening!</string>
+    <string name="greeting_night">Good Night!</string>
+    <string name="category_top_rated">Top Rated</string>
+    <string name="category_new_release">New Release</string>
+    <string name="recommendation_title">Based on your favorites</string>
+
+    <string name="search_hint">Search anime title...</string>
+    <string name="filter_genre">Genre</string>
+    <string name="filter_status">Status</string>
+    <string name="apply_filter">Apply Filter</string>
+
+    <string name="library_title">Your Library</string>
+    <string name="library_title_text">Your Library</string>
+    <string name="filter_all">All</string>
+    <string name="empty_library_msg">No anime in this list.</string>
+    <string name="empty_watchlist">No anime in this list.</string>
+    <string name="category_watching">Watching</string>
+    <string name="category_plan">Plan to Watch</string>
+    <string name="category_done">Completed</string>
+
+    <string name="detail_score">Score</string>
+    <string name="detail_status_label">Status</string>
+    <string name="select_category">Select Category</string>
+    <string name="status_watching">Watching</string>
+    <string name="status_plan">Plan</string>
+    <string name="status_plan_to_watch">Plan to Watch</string>
+    <string name="status_completed">Completed</string>
+    <string name="remove_from_list">Remove from List</string>
+
+    <string name="profile_title">Profile</string>
+    <string name="default_username">User Name</string>
+    <string name="edit_profile">Edit</string>
+    <string name="settings_header">Settings</string>
+    <string name="language_setting">Language</string>
+    <string name="default_language_val">English &gt;</string>
+    <string name="theme_setting">Theme</string>
+    <string name="default_theme_val">Light &gt;</string>
+    <string name="others_header">Others</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="about_app">About Application</string>
+
+    <string name="admin_panel">Admin Panel</string>
+    <string name="admin_title">Add New Anime</string>
+    <string name="hint_title">Anime Title</string>
+    <string name="hint_thumbnail">Poster Image URL</string>
+    <string name="hint_rating">Rating (e.g., 8.5)</string>
+    <string name="hint_genres">Genres (comma separated: Action, Drama)</string>
+    <string name="hint_synopsis">Synopsis</string>
+    <string name="hint_episodes">Episodes (e.g., 24 ep atau 1 Movie)</string>
+    <string name="hint_year">Release Year (e.g., 2024)</string>
+    <string name="hint_status">Status (Airing / Finished Airing)</string>
+    <string name="btn_save_anime">Save to Database</string>
+
+    <string name="admin_edit_title">Edit Anime</string>
+    <string name="btn_update_anime">Update Database</string>
+    <string name="btn_delete_anime">Delete Anime</string>
+
+    <string name="filter_sort">Sort</string>
+    <string name="sort_populer">Popular</string>
+    <string name="sort_rating_up">Rating ▲</string>
+    <string name="sort_rating_down">Rating ▼</string>
+    <string name="sort_newest">Newest</string>
+    <string name="sort_oldest">Oldest</string>
+    <string name="sort_az">A-Z</string>
+    <string name="sort_za">Z-A</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_library">Library</string>
+</resources>

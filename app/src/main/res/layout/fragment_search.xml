@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warna_bg_utama"
+    android:padding="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/box_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded_search"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ic_custom_search"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/search"
+            app:tint="?android:attr/textColorSecondary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <EditText
+            android:id="@+id/et_search_anime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/search_hint"
+            android:paddingHorizontal="12dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorHint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionSearch"
+            app:layout_constraintStart_toEndOf="@id/ic_custom_search"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_filters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:baselineAligned="false"
+        app:layout_constraintTop_toBottomOf="@id/box_search">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_genre"
+                android:textSize="11sp"
+                android:textColor="?android:attr/textColorSecondary"/>
+            <Spinner
+                android:id="@+id/spinner_genre"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="2dp"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_status"
+                android:textSize="11sp"
+                android:textColor="?android:attr/textColorSecondary"/>
+            <Spinner
+                android:id="@+id/spinner_status"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:background="?attr/selectableItemBackground"
+            android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_sort"
+                android:textSize="11sp"
+                android:textColor="?android:attr/textColorSecondary"/>
+
+            <com.animalist.app.ReselectableSpinner
+                android:id="@+id/spinner_sort"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_apply_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/apply_filter"
+        android:textColor="@color/warna_bg_utama"
+        android:visibility="gone"
+        app:backgroundTint="?android:attr/textColorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/layout_filters"/>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:shimmer_auto_start="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_apply_filter">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins">
+            <include layout="@layout/item_anime_shimmer" />
+            <include layout="@layout/item_anime_shimmer" />
+            <include layout="@layout/item_anime_shimmer" />
+            <include layout="@layout/item_anime_shimmer" />
+            <include layout="@layout/item_anime_shimmer" />
+            <include layout="@layout/item_anime_shimmer" />
+        </GridLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search_results"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_apply_filter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

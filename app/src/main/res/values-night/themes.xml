@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.AnimaList" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowSplashScreenBackground">@color/warna_bg_utama</item>
+        <item name="android:statusBarColor">@color/warna_bg_utama</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/warna_bg_utama</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="O_MR1">false</item>
+    </style>
+    <style name="Theme.AnimaList" parent="Base.Theme.AnimaList" />
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warna_bg_utama">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/btn_back_admin"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="16dp"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="?android:attr/textColorPrimary" />
+
+        <TextView
+            android:id="@+id/tv_admin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/admin_title"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/et_admin_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="textMultiLine"
+            android:hint="@string/hint_title"
+            android:background="@drawable/bg_rounded_search"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorHint"/>
+
+        <EditText
+            android:id="@+id/et_admin_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="textMultiLine"
+            android:hint="@string/hint_thumbnail"
+            android:background="@drawable/bg_rounded_search"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorHint"/>
+
+        <EditText
+            android:id="@+id/et_admin_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="numberDecimal"
+            android:hint="@string/hint_rating"
+            android:background="@drawable/bg_rounded_search"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorHint"/>
+
+        <EditText
+            android:id="@+id/et_admin_genres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="textMultiLine"
+            android:hint="@string/hint_genres"
+            android:background="@drawable/bg_rounded_search"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorHint"/>
+
+        <EditText
+            android:id="@+id/et_admin_episodes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="textMultiLine"
+            android:hint="@string/hint_episodes"
+            android:background="@drawable/bg_rounded_search"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorHint"/>
+
+        <EditText
+            android:id="@+id/et_admin_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="number"
+            android:hint="@string/hint_year"
+            android:background="@drawable/bg_rounded_search"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorHint"/>
+
+        <EditText
+            android:id="@+id/et_admin_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:inputType="textMultiLine"
+            android:hint="@string/hint_status"
+            android:background="@drawable/bg_rounded_search"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorHint"/>
+
+        <EditText
+            android:id="@+id/et_admin_synopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="120dp"
+            android:hint="@string/hint_synopsis"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:background="@drawable/bg_rounded_search"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorHint"/>
+
+        <Button
+            android:id="@+id/btn_admin_save"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/btn_save_anime"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btn_admin_delete"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/btn_delete_anime"
+            android:textColor="#FF4C4C"
+            android:layout_marginBottom="40dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>
