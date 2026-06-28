@@ -1,4 +1,4 @@
-# AnimaList
+# AnimaList 📑
 **Tugas Ujian Akhir Semester (UAS) - Pemrograman Mobile 2**
 
 Aplikasi katalog anime berbasis Android yang menampilkan data secara *real-time* menggunakan Jikan API (MyAnimeList) dan terintegrasi dengan Firebase Cloud Firestore serta sistem notifikasi cerdas menggunakan WorkManager.
